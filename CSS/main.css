@@ -1,0 +1,222 @@
+*, *::after, *::before{
+   margin: 0;
+   padding: 0;
+
+   box-sizing: border-box;
+}
+
+body {
+   background-color: #333;
+   margin: 20px;
+}
+
+.container {
+   color: grey;
+}
+
+.form-style{
+   background-color: red;
+
+   margin: 20px auto;
+   padding: 40px;
+}
+
+.inside-form {
+   margin-bottom: 11px;
+   text-align: center;
+   /* display: flex; */
+}
+.inside-form > label {
+   padding-right: 10px;
+}
+.inside-form > input[type="text"] {
+   flex: 1;
+}
+
+@media(min-width: 350px) {
+   .inside-form{
+      display: flex;
+   }
+}
+
+
+.column-layout {
+   background-color: white;
+   border: 2px solid yellow;
+   /* display: flex; */
+   line-height: 1.93;
+}
+.main-layout {
+   flex: 2;
+   order: 2;
+}
+.side-bar-one {
+   flex: 1;
+   order: 1;
+   color: black;
+}
+.side-bar-two {
+   flex: 1;
+   order: 2;
+   color: black;
+
+}
+
+@media(min-width: 750px) {
+   .column-layout {
+      display: flex;
+      line-height:1.53;
+   }
+}
+
+
+
+/* defferences*/
+.call-out {
+   padding: 25px;
+   flex: 1;
+}
+
+.call-out:first-child {
+   background-color: #066dcf;
+   color: #81f1f1;
+}
+
+.call-out:nth-child(2) {
+   background-color: #20ec5f;
+}
+
+.call-out:last-child {
+   background-color: #ea3eff;
+   color: white;
+}
+
+
+.bottom-layouts1 {
+   margin: 30px 0;
+   /* display: flex; */
+   line-height: 1.7;
+   border: 2px dashed rgba(255, 225, 255, 0.79);
+   align-item: stretch; /*By default*/
+}
+
+
+.bottom-layouts2 {
+   margin: 30px 0;
+   /* display: flex; */
+   line-height: 1.7;
+   border: 2px dashed rgba(182, 23, 85, 0.79);
+   /* madem 3malét display: flex l items el kol bch ijiw 9ad 9ad 7ata loukén wahda jét féha barcha ktiba ou hédhi 7aja béhya ama loukén nhéb nbadelha lazémni néktéb haka akéka kol wahda tékhou l height par défaut wel width pardéfaut */
+   align-items: flex-start;
+}
+
+
+.bottom-layouts3 {
+   margin: 30px 0;
+   /* display: flex; */
+   line-height: 1.7;
+   border: 2px dashed rgba(182, 23, 85, 0.79);
+   /* madem 3malét display: flex l items el kol bch ijiw 9ad 9ad 7ata loukén wahda jét féha barcha ktiba ou hédhi 7aja béhya ama loukén nhéb nbadelha lazémni néktéb haka akéka kol wahda tékhou l height par défaut wel width pardéfaut */
+   align-items: flex-end;
+}
+
+
+.bottom-layouts4 {
+   margin: 30px 0;
+   /* display: flex; */
+   line-height: 1.7;
+   border: 2px dashed rgba(182, 23, 85, 0.79);
+   /* madem 3malét display: flex l items el kol bch ijiw 9ad 9ad 7ata loukén wahda jét féha barcha ktiba ou hédhi 7aja béhya ama loukén nhéb nbadelha lazémni néktéb haka akéka kol wahda tékhou l height par défaut wel width pardéfaut */
+   align-items: center;
+}
+
+@media(min-width: 750px) {
+   .bottom-layouts1 {
+      display: flex;
+   }
+   .bottom-layouts2 {
+      display: flex;
+   }
+   .bottom-layouts3 {
+      display: flex;
+   }
+   .bottom-layouts4 {
+      display: flex;
+   }
+}
+
+
+/*----------------*/
+
+.bottom-layouts12 {
+   /* display: flex; */
+   margin: 150px 0 20px 0;
+/*   justify-content: space-between; aham haja fel flexbox hédhi trod el 10% eli fadhelthom fi call-out2 ta3mélhom espace mabin l items eli amalthom*/
+
+}
+.bottom-layouts22 {
+   /* display: flex; */
+   margin: 20px 0;
+   /* justify-content: space-around; */
+}
+
+.bottom-layouts32 {
+   /* display: flex; */
+   margin: 20px 0;
+   /* justify-content: center; /**/ */
+}
+.bottom-layouts42 {
+   /* display: flex; */
+   margin: 20px 0;
+   /* justify-content: flex-start; */
+}
+
+.bottom-layouts52 {
+   /* display: flex; */
+   margin: 20px 0;
+   /* justify-content: flex-end; /**/ */
+}
+
+.call-out2 {
+   padding: 20px;
+   /* flex: 1;  tawa hédhi bch néstagha aléha 5ater les items bch yékhldouli lespace l kol wena tawa 7achti bch namél margen*/
+   flex-basis: 30%;
+}
+
+.call-out2:first-child {
+   background-color: #066dcf;
+   color: #81f1f1;
+}
+
+.call-out2:nth-child(2) {
+   background-color: #20ec5f;
+}
+
+.call-out2:last-child {
+   background-color: #ea3eff;
+   color: white;
+}
+
+
+@media(min-width: 750px) {
+   .bottom-layouts12{
+      display: flex;
+      justify-content: space-between;
+   }
+   .bottom-layouts22{
+      display: flex;
+      justify-content: space-around;
+   }
+   .bottom-layouts32{
+      display: flex;
+      justify-content: center;
+   }
+   .bottom-layouts42{
+      display: flex;
+      justify-content: flex-start;
+   }
+   .bottom-layouts52{
+      display: flex;
+      justify-content: flex-end;
+   }
+}
